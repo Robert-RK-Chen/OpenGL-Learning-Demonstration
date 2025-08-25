@@ -63,6 +63,7 @@ int main()
                 currentTest->OnUpdate(0.0f);
                 currentTest->OnRender();
                 ImGui::Begin("Test");
+                ImGui::SetWindowFontScale(2.0f);
                 if (currentTest != testMenu && ImGui::Button("<-"))
                 {
                     delete currentTest;
